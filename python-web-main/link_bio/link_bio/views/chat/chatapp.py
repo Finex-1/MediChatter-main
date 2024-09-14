@@ -31,6 +31,7 @@ def action_bar() -> rx.Component:
             placeholder="Ingresa tu síntoma o consulta",
             value=TutorialState.question,
             on_change=TutorialState.set_question,
+            name="search",
             style=style.input_style,
         ),
         rx.button(
